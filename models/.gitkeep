@@ -1,0 +1,2 @@
+# La carpeta se mantiene en el repositorio; el modelo se regenera con:
+# python -m neurito.train

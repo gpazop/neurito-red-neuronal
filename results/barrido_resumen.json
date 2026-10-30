@@ -1,0 +1,80 @@
+{
+  "energia": {
+    "variable": "energia",
+    "fixed": {
+      "hambre": 0.7,
+      "aburrimiento": 0.45
+    },
+    "network_transitions": [
+      {
+        "from": 0,
+        "to": 1,
+        "value": 0.28719774681469423,
+        "teacher_value": 0.3005,
+        "offset": -0.0133
+      }
+    ],
+    "teacher_transitions": [
+      {
+        "from": 0,
+        "to": 1,
+        "value": 0.3005
+      }
+    ],
+    "expected_thresholds": [
+      0.3005
+    ]
+  },
+  "hambre": {
+    "variable": "hambre",
+    "fixed": {
+      "energia": 0.75,
+      "aburrimiento": 0.55
+    },
+    "network_transitions": [
+      {
+        "from": 2,
+        "to": 1,
+        "value": 0.539472508741077,
+        "teacher_value": 0.5495000000000001,
+        "offset": -0.01
+      }
+    ],
+    "teacher_transitions": [
+      {
+        "from": 2,
+        "to": 1,
+        "value": 0.5495000000000001
+      }
+    ],
+    "expected_thresholds": [
+      0.5495
+    ]
+  },
+  "aburrimiento": {
+    "variable": "aburrimiento",
+    "fixed": {
+      "energia": 0.75,
+      "hambre": 0.6
+    },
+    "network_transitions": [
+      {
+        "from": 1,
+        "to": 2,
+        "value": 0.6037665360099636,
+        "teacher_value": 0.6005,
+        "offset": 0.0033
+      }
+    ],
+    "teacher_transitions": [
+      {
+        "from": 1,
+        "to": 2,
+        "value": 0.6005
+      }
+    ],
+    "expected_thresholds": [
+      0.6005
+    ]
+  }
+}

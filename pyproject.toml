@@ -1,0 +1,10 @@
+[project]
+name = "neurito"
+version = "0.1.0"
+description = "Neurito: mascota virtual con cerebro de red neuronal (NumPy) y experimentos reproducibles"
+requires-python = ">=3.12"
+dependencies = [
+    "numpy>=2.5.4",
+    "pillow>=13.0.0",
+    "pygame-ce>=2.5.8",
+]

@@ -1,0 +1,117 @@
+{
+  "precision_global": 0.9533,
+  "precision_ambiguos": 0.6912,
+  "fraccion_ambiguos": 0.1511,
+  "ece": 0.1039,
+  "margenes": [
+    {
+      "margen": "<0.02",
+      "casos": 35,
+      "precision": 0.5143
+    },
+    {
+      "margen": "0.02-0.05",
+      "casos": 33,
+      "precision": 0.8788
+    },
+    {
+      "margen": "0.05-0.10",
+      "casos": 53,
+      "precision": 1.0
+    },
+    {
+      "margen": "0.10-0.20",
+      "casos": 100,
+      "precision": 1.0
+    },
+    {
+      "margen": ">0.20",
+      "casos": 229,
+      "precision": 1.0
+    }
+  ],
+  "bins_confianza": [
+    {
+      "lower": 0.0,
+      "upper": 0.1,
+      "count": 0,
+      "confidence": 0.0,
+      "accuracy": 0.0
+    },
+    {
+      "lower": 0.1,
+      "upper": 0.2,
+      "count": 0,
+      "confidence": 0.0,
+      "accuracy": 0.0
+    },
+    {
+      "lower": 0.2,
+      "upper": 0.30000000000000004,
+      "count": 0,
+      "confidence": 0.0,
+      "accuracy": 0.0
+    },
+    {
+      "lower": 0.30000000000000004,
+      "upper": 0.4,
+      "count": 3,
+      "confidence": 0.3672448920694314,
+      "accuracy": 0.6666666666666666
+    },
+    {
+      "lower": 0.4,
+      "upper": 0.5,
+      "count": 10,
+      "confidence": 0.45243160915623337,
+      "accuracy": 0.8
+    },
+    {
+      "lower": 0.5,
+      "upper": 0.6000000000000001,
+      "count": 43,
+      "confidence": 0.5461306005744122,
+      "accuracy": 0.627906976744186
+    },
+    {
+      "lower": 0.6000000000000001,
+      "upper": 0.7000000000000001,
+      "count": 29,
+      "confidence": 0.6561621470203614,
+      "accuracy": 0.9310344827586207
+    },
+    {
+      "lower": 0.7000000000000001,
+      "upper": 0.8,
+      "count": 55,
+      "confidence": 0.7505246898354859,
+      "accuracy": 1.0
+    },
+    {
+      "lower": 0.8,
+      "upper": 0.9,
+      "count": 60,
+      "confidence": 0.848407143692938,
+      "accuracy": 1.0
+    },
+    {
+      "lower": 0.9,
+      "upper": 1.0,
+      "count": 250,
+      "confidence": 0.9676600481469347,
+      "accuracy": 1.0
+    }
+  ],
+  "ejemplo_desbalance": {
+    "clase_mayoritaria": "comer",
+    "proporcion": 0.8,
+    "precision_clasificador_constante": 0.8,
+    "precision_balanceada": 0.3333,
+    "recall_por_clase": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "explicacion": "Un clasificador que siempre dice 'comer' acierta el 80% si esa clase es el 80% del test, pero tiene 0% de recall en las otras dos."
+  }
+}

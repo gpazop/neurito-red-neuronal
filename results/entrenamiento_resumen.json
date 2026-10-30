@@ -1,0 +1,131 @@
+{
+  "tasa_aprendizaje": [
+    {
+      "tasa_aprendizaje": 0.01,
+      "epocas": 800,
+      "perdida_entrenamiento": 0.96148,
+      "perdida_prueba": 0.9116,
+      "precision_prueba": 0.6133,
+      "precision_ambiguos": 0.5,
+      "divergio": false,
+      "estado": "se estanca",
+      "segundos": 1.986
+    },
+    {
+      "tasa_aprendizaje": 0.05,
+      "epocas": 800,
+      "perdida_entrenamiento": 0.53962,
+      "perdida_prueba": 0.45372,
+      "precision_prueba": 0.9022,
+      "precision_ambiguos": 0.6618,
+      "divergio": false,
+      "estado": "se estanca",
+      "segundos": 2.049
+    },
+    {
+      "tasa_aprendizaje": 0.1,
+      "epocas": 800,
+      "perdida_entrenamiento": 0.39009,
+      "perdida_prueba": 0.25531,
+      "precision_prueba": 0.9667,
+      "precision_ambiguos": 0.7941,
+      "divergio": false,
+      "estado": "mejora",
+      "segundos": 2.1
+    },
+    {
+      "tasa_aprendizaje": 0.5,
+      "epocas": 800,
+      "perdida_entrenamiento": 0.36819,
+      "perdida_prueba": 0.19488,
+      "precision_prueba": 0.9533,
+      "precision_ambiguos": 0.6912,
+      "divergio": false,
+      "estado": "mejora",
+      "segundos": 1.9
+    },
+    {
+      "tasa_aprendizaje": 1.0,
+      "epocas": 800,
+      "perdida_entrenamiento": 0.36133,
+      "perdida_prueba": 0.18507,
+      "precision_prueba": 0.9467,
+      "precision_ambiguos": 0.6471,
+      "divergio": false,
+      "estado": "mejora",
+      "segundos": 1.96
+    },
+    {
+      "tasa_aprendizaje": 2.0,
+      "epocas": 800,
+      "perdida_entrenamiento": 0.51495,
+      "perdida_prueba": 0.34992,
+      "precision_prueba": 0.8333,
+      "precision_ambiguos": 0.5735,
+      "divergio": false,
+      "estado": "se estanca",
+      "segundos": 1.951
+    },
+    {
+      "tasa_aprendizaje": 5.0,
+      "epocas": 800,
+      "perdida_entrenamiento": 1.099,
+      "perdida_prueba": 1.09703,
+      "precision_prueba": 0.3756,
+      "precision_ambiguos": 0.4118,
+      "divergio": false,
+      "estado": "inestable",
+      "segundos": 1.922
+    }
+  ],
+  "epocas": [
+    {
+      "epocas": 50,
+      "precision_media": 0.8311,
+      "precision_std": 0.1053,
+      "perdida_media": 0.61794,
+      "perdida_std": 0.09973,
+      "precision_ambiguos_media": 0.4559
+    },
+    {
+      "epocas": 100,
+      "precision_media": 0.9081,
+      "precision_std": 0.0385,
+      "perdida_media": 0.39196,
+      "perdida_std": 0.06981,
+      "precision_ambiguos_media": 0.5588
+    },
+    {
+      "epocas": 200,
+      "precision_media": 0.9422,
+      "precision_std": 0.0204,
+      "perdida_media": 0.26109,
+      "perdida_std": 0.01734,
+      "precision_ambiguos_media": 0.6716
+    },
+    {
+      "epocas": 400,
+      "precision_media": 0.9563,
+      "precision_std": 0.0154,
+      "perdida_media": 0.22042,
+      "perdida_std": 0.01759,
+      "precision_ambiguos_media": 0.7451
+    },
+    {
+      "epocas": 800,
+      "precision_media": 0.9667,
+      "precision_std": 0.0119,
+      "perdida_media": 0.20722,
+      "perdida_std": 0.01501,
+      "precision_ambiguos_media": 0.7794
+    },
+    {
+      "epocas": 1600,
+      "precision_media": 0.9667,
+      "precision_std": 0.0094,
+      "perdida_media": 0.20138,
+      "perdida_std": 0.01337,
+      "precision_ambiguos_media": 0.7794
+    }
+  ]
+}

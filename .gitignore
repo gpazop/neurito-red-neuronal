@@ -1,0 +1,21 @@
+# Entornos virtuales y cachés
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Modelos generados por el entrenamiento
+models/*.npz
+models/*.json
+!models/.gitkeep
+
+# Ilustraciones originales pesadas: el repo usa las copias de assets/pet/
+assets/*.png
+
+# Archivos del sistema y registros
+.DS_Store
+Thumbs.db
+*.log

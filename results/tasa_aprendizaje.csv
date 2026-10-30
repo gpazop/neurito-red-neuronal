@@ -1,0 +1,8 @@
+﻿tasa_aprendizaje,epocas,perdida_entrenamiento,perdida_prueba,precision_prueba,precision_ambiguos,divergio,estado,segundos
+0.01,800,0.96148,0.9116,0.6133,0.5,False,se estanca,1.986
+0.05,800,0.53962,0.45372,0.9022,0.6618,False,se estanca,2.049
+0.1,800,0.39009,0.25531,0.9667,0.7941,False,mejora,2.1
+0.5,800,0.36819,0.19488,0.9533,0.6912,False,mejora,1.9
+1.0,800,0.36133,0.18507,0.9467,0.6471,False,mejora,1.96
+2.0,800,0.51495,0.34992,0.8333,0.5735,False,se estanca,1.951
+5.0,800,1.099,1.09703,0.3756,0.4118,False,inestable,1.922

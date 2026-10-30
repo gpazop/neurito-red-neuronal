@@ -1,0 +1,206 @@
+{
+  "necesidades": [
+    "energia",
+    "hambre",
+    "aburrimiento",
+    "suciedad"
+  ],
+  "acciones": [
+    "dormir",
+    "comer",
+    "jugar",
+    "banar"
+  ],
+  "n_entrenamiento": 2800,
+  "n_validacion": 600,
+  "n_prueba": 600,
+  "parametros": 94,
+  "precision_prueba": 0.9717,
+  "perdida_prueba": 0.2331,
+  "precision_por_clase": [
+    {
+      "accion": "dormir",
+      "precision": 0.9524,
+      "recall": 0.9859,
+      "f1": 0.9689,
+      "support": 142
+    },
+    {
+      "accion": "comer",
+      "precision": 0.9816,
+      "recall": 0.9639,
+      "f1": 0.9726,
+      "support": 166
+    },
+    {
+      "accion": "jugar",
+      "precision": 0.9865,
+      "recall": 0.9605,
+      "f1": 0.9733,
+      "support": 152
+    },
+    {
+      "accion": "banar",
+      "precision": 0.9648,
+      "recall": 0.9786,
+      "f1": 0.9716,
+      "support": 140
+    }
+  ],
+  "matriz_confusion": [
+    [
+      140,
+      1,
+      0,
+      1
+    ],
+    [
+      2,
+      160,
+      2,
+      2
+    ],
+    [
+      2,
+      2,
+      146,
+      2
+    ],
+    [
+      3,
+      0,
+      0,
+      137
+    ]
+  ],
+  "ejemplos": [
+    {
+      "energia": 0.639,
+      "hambre": 0.026,
+      "aburrimiento": 0.754,
+      "suciedad": 0.58,
+      "sueno": 0.361,
+      "urgencia_hambre": 0.026,
+      "urgencia_aburrimiento": 0.754,
+      "urgencia_suciedad": 0.58,
+      "etiqueta": "jugar",
+      "prediccion": "jugar"
+    },
+    {
+      "energia": 0.985,
+      "hambre": 0.806,
+      "aburrimiento": 0.506,
+      "suciedad": 0.394,
+      "sueno": 0.015,
+      "urgencia_hambre": 0.806,
+      "urgencia_aburrimiento": 0.506,
+      "urgencia_suciedad": 0.394,
+      "etiqueta": "comer",
+      "prediccion": "comer"
+    },
+    {
+      "energia": 0.161,
+      "hambre": 0.319,
+      "aburrimiento": 0.923,
+      "suciedad": 0.046,
+      "sueno": 0.839,
+      "urgencia_hambre": 0.319,
+      "urgencia_aburrimiento": 0.923,
+      "urgencia_suciedad": 0.046,
+      "etiqueta": "jugar",
+      "prediccion": "jugar"
+    },
+    {
+      "energia": 0.722,
+      "hambre": 0.251,
+      "aburrimiento": 0.064,
+      "suciedad": 0.88,
+      "sueno": 0.278,
+      "urgencia_hambre": 0.251,
+      "urgencia_aburrimiento": 0.064,
+      "urgencia_suciedad": 0.88,
+      "etiqueta": "banar",
+      "prediccion": "banar"
+    },
+    {
+      "energia": 0.266,
+      "hambre": 0.006,
+      "aburrimiento": 0.946,
+      "suciedad": 0.337,
+      "sueno": 0.734,
+      "urgencia_hambre": 0.006,
+      "urgencia_aburrimiento": 0.946,
+      "urgencia_suciedad": 0.337,
+      "etiqueta": "jugar",
+      "prediccion": "jugar"
+    },
+    {
+      "energia": 0.977,
+      "hambre": 0.294,
+      "aburrimiento": 0.537,
+      "suciedad": 0.358,
+      "sueno": 0.023,
+      "urgencia_hambre": 0.294,
+      "urgencia_aburrimiento": 0.537,
+      "urgencia_suciedad": 0.358,
+      "etiqueta": "jugar",
+      "prediccion": "jugar"
+    },
+    {
+      "energia": 0.125,
+      "hambre": 0.87,
+      "aburrimiento": 0.453,
+      "suciedad": 0.96,
+      "sueno": 0.875,
+      "urgencia_hambre": 0.87,
+      "urgencia_aburrimiento": 0.453,
+      "urgencia_suciedad": 0.96,
+      "etiqueta": "banar",
+      "prediccion": "banar"
+    },
+    {
+      "energia": 0.486,
+      "hambre": 0.631,
+      "aburrimiento": 0.382,
+      "suciedad": 0.22,
+      "sueno": 0.514,
+      "urgencia_hambre": 0.631,
+      "urgencia_aburrimiento": 0.382,
+      "urgencia_suciedad": 0.22,
+      "etiqueta": "comer",
+      "prediccion": "comer"
+    },
+    {
+      "energia": 0.189,
+      "hambre": 0.766,
+      "aburrimiento": 0.054,
+      "suciedad": 0.785,
+      "sueno": 0.811,
+      "urgencia_hambre": 0.766,
+      "urgencia_aburrimiento": 0.054,
+      "urgencia_suciedad": 0.785,
+      "etiqueta": "dormir",
+      "prediccion": "dormir"
+    },
+    {
+      "energia": 0.612,
+      "hambre": 0.666,
+      "aburrimiento": 0.678,
+      "suciedad": 0.57,
+      "sueno": 0.388,
+      "urgencia_hambre": 0.666,
+      "urgencia_aburrimiento": 0.678,
+      "urgencia_suciedad": 0.57,
+      "etiqueta": "jugar",
+      "prediccion": "jugar"
+    }
+  ],
+  "que_hace_falta": [
+    "Una cuarta entrada: suciedad (0 = limpio, 1 = muy sucio).",
+    "Una cuarta salida en la capa final y una neurona más de capacidad.",
+    "Etiquetas para cada combinación de las cuatro necesidades; no basta con inventar la acción.",
+    "Ejemplos donde la higiene compita cerca con sueño, hambre y aburrimiento.",
+    "Una animación nueva para bañar y una forma de actualizar la necesidad de higiene.",
+    "Volver a entrenar desde cero: la capa de salida cambia de 3 a 4 neuronas."
+  ]
+}

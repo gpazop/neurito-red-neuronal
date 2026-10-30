@@ -1,0 +1,839 @@
+{
+  "principal": {
+    "n_params": 45,
+    "train_loss_noisy": 0.3681901181600018,
+    "train_loss_clean": 0.18218732708038748,
+    "train_accuracy_noisy": 0.9261904761904762,
+    "train_accuracy_clean": 0.9738095238095238,
+    "val_loss": 0.18528821821725672,
+    "val_accuracy": 0.9688888888888889,
+    "test_loss": 0.1948758350826562,
+    "test_accuracy": 0.9533333333333334,
+    "test_error": 0.046666666666666634,
+    "confusion_matrix": [
+      [
+        137,
+        5,
+        6
+      ],
+      [
+        0,
+        130,
+        3
+      ],
+      [
+        0,
+        7,
+        162
+      ]
+    ],
+    "per_class": [
+      {
+        "precision": 1.0,
+        "recall": 0.9256756756756757,
+        "f1": 0.9614035087719298,
+        "support": 148
+      },
+      {
+        "precision": 0.9154929577464789,
+        "recall": 0.9774436090225563,
+        "f1": 0.9454545454545454,
+        "support": 133
+      },
+      {
+        "precision": 0.9473684210526315,
+        "recall": 0.9585798816568047,
+        "f1": 0.9529411764705883,
+        "support": 169
+      }
+    ],
+    "ece": 0.10391851676594994,
+    "ambiguity": {
+      "accuracy": 0.9533333333333334,
+      "accuracy_ambiguous": 0.6911764705882353,
+      "fraction_ambiguous": 0.1511111111111111,
+      "accuracy_clear": 1.0,
+      "margin": 0.05
+    }
+  },
+  "config_principal": {
+    "hidden": 6,
+    "epochs": 800,
+    "lr": 0.5,
+    "l2": 0.0001,
+    "seed": 42,
+    "label_noise": 0.05,
+    "n_samples": 3000,
+    "data_seed": 2026,
+    "record_every": 1
+  },
+  "segundos_principales": 3.892,
+  "barridos": {
+    "energia": {
+      "variable": "energia",
+      "fixed": {
+        "hambre": 0.7,
+        "aburrimiento": 0.45
+      },
+      "network_transitions": [
+        {
+          "from": 0,
+          "to": 1,
+          "value": 0.28719774681469423,
+          "teacher_value": 0.3005,
+          "offset": -0.0133
+        }
+      ],
+      "teacher_transitions": [
+        {
+          "from": 0,
+          "to": 1,
+          "value": 0.3005
+        }
+      ],
+      "expected_thresholds": [
+        0.3005
+      ]
+    },
+    "hambre": {
+      "variable": "hambre",
+      "fixed": {
+        "energia": 0.75,
+        "aburrimiento": 0.55
+      },
+      "network_transitions": [
+        {
+          "from": 2,
+          "to": 1,
+          "value": 0.539472508741077,
+          "teacher_value": 0.5495000000000001,
+          "offset": -0.01
+        }
+      ],
+      "teacher_transitions": [
+        {
+          "from": 2,
+          "to": 1,
+          "value": 0.5495000000000001
+        }
+      ],
+      "expected_thresholds": [
+        0.5495
+      ]
+    },
+    "aburrimiento": {
+      "variable": "aburrimiento",
+      "fixed": {
+        "energia": 0.75,
+        "hambre": 0.6
+      },
+      "network_transitions": [
+        {
+          "from": 1,
+          "to": 2,
+          "value": 0.6037665360099636,
+          "teacher_value": 0.6005,
+          "offset": 0.0033
+        }
+      ],
+      "teacher_transitions": [
+        {
+          "from": 1,
+          "to": 2,
+          "value": 0.6005
+        }
+      ],
+      "expected_thresholds": [
+        0.6005
+      ]
+    }
+  },
+  "empates": {
+    "dos": {
+      "fixed": {
+        "energia": 0.5,
+        "aburrimiento": 0.2
+      },
+      "at_tie": {
+        "p_dormir": 0.435,
+        "p_comer": 0.516,
+        "p_jugar": 0.049,
+        "entropia": 0.851,
+        "prediccion": "comer"
+      },
+      "selected": {
+        "-0.020": {
+          "hambre": 0.48,
+          "p_dormir": 0.511,
+          "p_comer": 0.441,
+          "p_jugar": 0.048,
+          "accion": "dormir",
+          "entropia": 0.85
+        },
+        "-0.010": {
+          "hambre": 0.49,
+          "p_dormir": 0.473,
+          "p_comer": 0.479,
+          "p_jugar": 0.049,
+          "accion": "comer",
+          "entropia": 0.854
+        },
+        "-0.005": {
+          "hambre": 0.495,
+          "p_dormir": 0.454,
+          "p_comer": 0.497,
+          "p_jugar": 0.049,
+          "accion": "comer",
+          "entropia": 0.853
+        },
+        "+0.000": {
+          "hambre": 0.5,
+          "p_dormir": 0.435,
+          "p_comer": 0.516,
+          "p_jugar": 0.049,
+          "accion": "comer",
+          "entropia": 0.851
+        },
+        "+0.005": {
+          "hambre": 0.505,
+          "p_dormir": 0.416,
+          "p_comer": 0.534,
+          "p_jugar": 0.049,
+          "accion": "comer",
+          "entropia": 0.848
+        },
+        "+0.010": {
+          "hambre": 0.51,
+          "p_dormir": 0.398,
+          "p_comer": 0.553,
+          "p_jugar": 0.049,
+          "accion": "comer",
+          "entropia": 0.842
+        },
+        "+0.020": {
+          "hambre": 0.52,
+          "p_dormir": 0.362,
+          "p_comer": 0.589,
+          "p_jugar": 0.049,
+          "accion": "comer",
+          "entropia": 0.827
+        }
+      },
+      "max_probability_change_per_0.001": 0.0038,
+      "probability_span_comer": 0.289
+    },
+    "tres": {
+      "fixed": {
+        "energia": 0.5,
+        "aburrimiento": 0.5
+      },
+      "at_tie": {
+        "p_dormir": 0.314,
+        "p_comer": 0.352,
+        "p_jugar": 0.335,
+        "entropia": 1.098,
+        "prediccion": "comer"
+      },
+      "selected": {
+        "-0.020": {
+          "hambre": 0.49,
+          "p_dormir": 0.331,
+          "p_comer": 0.316,
+          "p_jugar": 0.353,
+          "accion": "jugar",
+          "entropia": 1.098
+        },
+        "-0.010": {
+          "hambre": 0.49,
+          "p_dormir": 0.331,
+          "p_comer": 0.316,
+          "p_jugar": 0.353,
+          "accion": "jugar",
+          "entropia": 1.098
+        },
+        "-0.005": {
+          "hambre": 0.495,
+          "p_dormir": 0.323,
+          "p_comer": 0.334,
+          "p_jugar": 0.344,
+          "accion": "jugar",
+          "entropia": 1.098
+        },
+        "+0.000": {
+          "hambre": 0.5,
+          "p_dormir": 0.314,
+          "p_comer": 0.352,
+          "p_jugar": 0.335,
+          "accion": "comer",
+          "entropia": 1.098
+        },
+        "+0.005": {
+          "hambre": 0.505,
+          "p_dormir": 0.305,
+          "p_comer": 0.37,
+          "p_jugar": 0.325,
+          "accion": "comer",
+          "entropia": 1.095
+        },
+        "+0.010": {
+          "hambre": 0.51,
+          "p_dormir": 0.296,
+          "p_comer": 0.389,
+          "p_jugar": 0.315,
+          "accion": "comer",
+          "entropia": 1.091
+        },
+        "+0.020": {
+          "hambre": 0.51,
+          "p_dormir": 0.296,
+          "p_comer": 0.389,
+          "p_jugar": 0.315,
+          "accion": "comer",
+          "entropia": 1.091
+        }
+      },
+      "max_probability_change_per_0.001": 0.0038,
+      "probability_span_comer": 0.073
+    }
+  },
+  "anchos": {
+    "3": {
+      "neuronas_ocultas": 3,
+      "parametros": 24,
+      "perdida_entrenamiento_media": 0.592384,
+      "perdida_entrenamiento_std": 0.2876422884486911,
+      "perdida_prueba_media": 0.48599,
+      "perdida_prueba_std": 0.36239321500270943,
+      "precision_entrenamiento_media": 0.7727,
+      "precision_entrenamiento_std": 0.24997450269977534,
+      "precision_prueba_media": 0.76224,
+      "precision_prueba_std": 0.24113038464697892,
+      "precision_ambiguos_media": 0.56178,
+      "precision_ambiguos_std": 0.16881424584435994,
+      "ece_media": 0.08064000000000002,
+      "ece_std": 0.037427508599958935,
+      "segundos_media": 1.5646,
+      "segundos_std": 0.03897999486916331,
+      "precision_min": 0.3756,
+      "precision_max": 0.9578,
+      "precision_mediana": 0.9422
+    },
+    "6": {
+      "neuronas_ocultas": 6,
+      "parametros": 45,
+      "perdida_entrenamiento_media": 0.37346399999999996,
+      "perdida_entrenamiento_std": 0.011296752807776232,
+      "perdida_prueba_media": 0.201566,
+      "perdida_prueba_std": 0.013536032801378696,
+      "precision_entrenamiento_media": 0.98296,
+      "precision_entrenamiento_std": 0.006115423125181128,
+      "precision_prueba_media": 0.96754,
+      "precision_prueba_std": 0.00969960823951155,
+      "precision_ambiguos_media": 0.78822,
+      "precision_ambiguos_std": 0.06346587744607335,
+      "ece_media": 0.12704,
+      "ece_std": 0.012585801523939587,
+      "segundos_media": 1.7082000000000002,
+      "segundos_std": 0.010533755265810988,
+      "precision_min": 0.9511,
+      "precision_max": 0.98,
+      "precision_mediana": 0.9689
+    },
+    "10": {
+      "neuronas_ocultas": 10,
+      "parametros": 73,
+      "perdida_entrenamiento_media": 0.362462,
+      "perdida_entrenamiento_std": 0.005911989174550305,
+      "perdida_prueba_media": 0.189856,
+      "perdida_prueba_std": 0.004948153595029159,
+      "precision_entrenamiento_media": 0.9819800000000001,
+      "precision_entrenamiento_std": 0.008185939164201027,
+      "precision_prueba_media": 0.9751200000000001,
+      "precision_prueba_std": 0.007383603456307768,
+      "precision_ambiguos_media": 0.83528,
+      "precision_ambiguos_std": 0.04869707999459516,
+      "ece_media": 0.12535999999999997,
+      "ece_std": 0.007551052906714397,
+      "segundos_media": 2.1974,
+      "segundos_std": 0.16575355199813965,
+      "precision_min": 0.9644,
+      "precision_max": 0.9867,
+      "precision_mediana": 0.9756
+    },
+    "20": {
+      "neuronas_ocultas": 20,
+      "parametros": 143,
+      "perdida_entrenamiento_media": 0.359778,
+      "perdida_entrenamiento_std": 0.0039421385059381165,
+      "perdida_prueba_media": 0.189452,
+      "perdida_prueba_std": 0.004563649416859272,
+      "precision_entrenamiento_media": 0.98666,
+      "precision_entrenamiento_std": 0.000972830920561224,
+      "precision_prueba_media": 0.9711000000000001,
+      "precision_prueba_std": 0.0013914021704741091,
+      "precision_ambiguos_media": 0.8088,
+      "precision_ambiguos_std": 0.009297096320895029,
+      "ece_media": 0.12188000000000002,
+      "ece_std": 0.0038253888691216777,
+      "segundos_media": 2.6827999999999994,
+      "segundos_std": 0.10293182209598728,
+      "precision_min": 0.9689,
+      "precision_max": 0.9733,
+      "precision_mediana": 0.9711
+    }
+  },
+  "entrenamiento": {
+    "tasa_aprendizaje": [
+      {
+        "tasa_aprendizaje": 0.01,
+        "epocas": 800,
+        "perdida_entrenamiento": 0.96148,
+        "perdida_prueba": 0.9116,
+        "precision_prueba": 0.6133,
+        "precision_ambiguos": 0.5,
+        "divergio": false,
+        "estado": "se estanca",
+        "segundos": 1.986
+      },
+      {
+        "tasa_aprendizaje": 0.05,
+        "epocas": 800,
+        "perdida_entrenamiento": 0.53962,
+        "perdida_prueba": 0.45372,
+        "precision_prueba": 0.9022,
+        "precision_ambiguos": 0.6618,
+        "divergio": false,
+        "estado": "se estanca",
+        "segundos": 2.049
+      },
+      {
+        "tasa_aprendizaje": 0.1,
+        "epocas": 800,
+        "perdida_entrenamiento": 0.39009,
+        "perdida_prueba": 0.25531,
+        "precision_prueba": 0.9667,
+        "precision_ambiguos": 0.7941,
+        "divergio": false,
+        "estado": "mejora",
+        "segundos": 2.1
+      },
+      {
+        "tasa_aprendizaje": 0.5,
+        "epocas": 800,
+        "perdida_entrenamiento": 0.36819,
+        "perdida_prueba": 0.19488,
+        "precision_prueba": 0.9533,
+        "precision_ambiguos": 0.6912,
+        "divergio": false,
+        "estado": "mejora",
+        "segundos": 1.9
+      },
+      {
+        "tasa_aprendizaje": 1.0,
+        "epocas": 800,
+        "perdida_entrenamiento": 0.36133,
+        "perdida_prueba": 0.18507,
+        "precision_prueba": 0.9467,
+        "precision_ambiguos": 0.6471,
+        "divergio": false,
+        "estado": "mejora",
+        "segundos": 1.96
+      },
+      {
+        "tasa_aprendizaje": 2.0,
+        "epocas": 800,
+        "perdida_entrenamiento": 0.51495,
+        "perdida_prueba": 0.34992,
+        "precision_prueba": 0.8333,
+        "precision_ambiguos": 0.5735,
+        "divergio": false,
+        "estado": "se estanca",
+        "segundos": 1.951
+      },
+      {
+        "tasa_aprendizaje": 5.0,
+        "epocas": 800,
+        "perdida_entrenamiento": 1.099,
+        "perdida_prueba": 1.09703,
+        "precision_prueba": 0.3756,
+        "precision_ambiguos": 0.4118,
+        "divergio": false,
+        "estado": "inestable",
+        "segundos": 1.922
+      }
+    ],
+    "epocas": [
+      {
+        "epocas": 50,
+        "precision_media": 0.8311,
+        "precision_std": 0.1053,
+        "perdida_media": 0.61794,
+        "perdida_std": 0.09973,
+        "precision_ambiguos_media": 0.4559
+      },
+      {
+        "epocas": 100,
+        "precision_media": 0.9081,
+        "precision_std": 0.0385,
+        "perdida_media": 0.39196,
+        "perdida_std": 0.06981,
+        "precision_ambiguos_media": 0.5588
+      },
+      {
+        "epocas": 200,
+        "precision_media": 0.9422,
+        "precision_std": 0.0204,
+        "perdida_media": 0.26109,
+        "perdida_std": 0.01734,
+        "precision_ambiguos_media": 0.6716
+      },
+      {
+        "epocas": 400,
+        "precision_media": 0.9563,
+        "precision_std": 0.0154,
+        "perdida_media": 0.22042,
+        "perdida_std": 0.01759,
+        "precision_ambiguos_media": 0.7451
+      },
+      {
+        "epocas": 800,
+        "precision_media": 0.9667,
+        "precision_std": 0.0119,
+        "perdida_media": 0.20722,
+        "perdida_std": 0.01501,
+        "precision_ambiguos_media": 0.7794
+      },
+      {
+        "epocas": 1600,
+        "precision_media": 0.9667,
+        "precision_std": 0.0094,
+        "perdida_media": 0.20138,
+        "perdida_std": 0.01337,
+        "precision_ambiguos_media": 0.7794
+      }
+    ]
+  },
+  "calibracion": {
+    "precision_global": 0.9533,
+    "precision_ambiguos": 0.6912,
+    "fraccion_ambiguos": 0.1511,
+    "ece": 0.1039,
+    "margenes": [
+      {
+        "margen": "<0.02",
+        "casos": 35,
+        "precision": 0.5143
+      },
+      {
+        "margen": "0.02-0.05",
+        "casos": 33,
+        "precision": 0.8788
+      },
+      {
+        "margen": "0.05-0.10",
+        "casos": 53,
+        "precision": 1.0
+      },
+      {
+        "margen": "0.10-0.20",
+        "casos": 100,
+        "precision": 1.0
+      },
+      {
+        "margen": ">0.20",
+        "casos": 229,
+        "precision": 1.0
+      }
+    ],
+    "bins_confianza": [
+      {
+        "lower": 0.0,
+        "upper": 0.1,
+        "count": 0,
+        "confidence": 0.0,
+        "accuracy": 0.0
+      },
+      {
+        "lower": 0.1,
+        "upper": 0.2,
+        "count": 0,
+        "confidence": 0.0,
+        "accuracy": 0.0
+      },
+      {
+        "lower": 0.2,
+        "upper": 0.30000000000000004,
+        "count": 0,
+        "confidence": 0.0,
+        "accuracy": 0.0
+      },
+      {
+        "lower": 0.30000000000000004,
+        "upper": 0.4,
+        "count": 3,
+        "confidence": 0.3672448920694314,
+        "accuracy": 0.6666666666666666
+      },
+      {
+        "lower": 0.4,
+        "upper": 0.5,
+        "count": 10,
+        "confidence": 0.45243160915623337,
+        "accuracy": 0.8
+      },
+      {
+        "lower": 0.5,
+        "upper": 0.6000000000000001,
+        "count": 43,
+        "confidence": 0.5461306005744122,
+        "accuracy": 0.627906976744186
+      },
+      {
+        "lower": 0.6000000000000001,
+        "upper": 0.7000000000000001,
+        "count": 29,
+        "confidence": 0.6561621470203614,
+        "accuracy": 0.9310344827586207
+      },
+      {
+        "lower": 0.7000000000000001,
+        "upper": 0.8,
+        "count": 55,
+        "confidence": 0.7505246898354859,
+        "accuracy": 1.0
+      },
+      {
+        "lower": 0.8,
+        "upper": 0.9,
+        "count": 60,
+        "confidence": 0.848407143692938,
+        "accuracy": 1.0
+      },
+      {
+        "lower": 0.9,
+        "upper": 1.0,
+        "count": 250,
+        "confidence": 0.9676600481469347,
+        "accuracy": 1.0
+      }
+    ],
+    "ejemplo_desbalance": {
+      "clase_mayoritaria": "comer",
+      "proporcion": 0.8,
+      "precision_clasificador_constante": 0.8,
+      "precision_balanceada": 0.3333,
+      "recall_por_clase": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "explicacion": "Un clasificador que siempre dice 'comer' acierta el 80% si esa clase es el 80% del test, pero tiene 0% de recall en las otras dos."
+    }
+  },
+  "cuarta": {
+    "necesidades": [
+      "energia",
+      "hambre",
+      "aburrimiento",
+      "suciedad"
+    ],
+    "acciones": [
+      "dormir",
+      "comer",
+      "jugar",
+      "banar"
+    ],
+    "n_entrenamiento": 2800,
+    "n_validacion": 600,
+    "n_prueba": 600,
+    "parametros": 94,
+    "precision_prueba": 0.9717,
+    "perdida_prueba": 0.2331,
+    "precision_por_clase": [
+      {
+        "accion": "dormir",
+        "precision": 0.9524,
+        "recall": 0.9859,
+        "f1": 0.9689,
+        "support": 142
+      },
+      {
+        "accion": "comer",
+        "precision": 0.9816,
+        "recall": 0.9639,
+        "f1": 0.9726,
+        "support": 166
+      },
+      {
+        "accion": "jugar",
+        "precision": 0.9865,
+        "recall": 0.9605,
+        "f1": 0.9733,
+        "support": 152
+      },
+      {
+        "accion": "banar",
+        "precision": 0.9648,
+        "recall": 0.9786,
+        "f1": 0.9716,
+        "support": 140
+      }
+    ],
+    "matriz_confusion": [
+      [
+        140,
+        1,
+        0,
+        1
+      ],
+      [
+        2,
+        160,
+        2,
+        2
+      ],
+      [
+        2,
+        2,
+        146,
+        2
+      ],
+      [
+        3,
+        0,
+        0,
+        137
+      ]
+    ],
+    "ejemplos": [
+      {
+        "energia": 0.639,
+        "hambre": 0.026,
+        "aburrimiento": 0.754,
+        "suciedad": 0.58,
+        "sueno": 0.361,
+        "urgencia_hambre": 0.026,
+        "urgencia_aburrimiento": 0.754,
+        "urgencia_suciedad": 0.58,
+        "etiqueta": "jugar",
+        "prediccion": "jugar"
+      },
+      {
+        "energia": 0.985,
+        "hambre": 0.806,
+        "aburrimiento": 0.506,
+        "suciedad": 0.394,
+        "sueno": 0.015,
+        "urgencia_hambre": 0.806,
+        "urgencia_aburrimiento": 0.506,
+        "urgencia_suciedad": 0.394,
+        "etiqueta": "comer",
+        "prediccion": "comer"
+      },
+      {
+        "energia": 0.161,
+        "hambre": 0.319,
+        "aburrimiento": 0.923,
+        "suciedad": 0.046,
+        "sueno": 0.839,
+        "urgencia_hambre": 0.319,
+        "urgencia_aburrimiento": 0.923,
+        "urgencia_suciedad": 0.046,
+        "etiqueta": "jugar",
+        "prediccion": "jugar"
+      },
+      {
+        "energia": 0.722,
+        "hambre": 0.251,
+        "aburrimiento": 0.064,
+        "suciedad": 0.88,
+        "sueno": 0.278,
+        "urgencia_hambre": 0.251,
+        "urgencia_aburrimiento": 0.064,
+        "urgencia_suciedad": 0.88,
+        "etiqueta": "banar",
+        "prediccion": "banar"
+      },
+      {
+        "energia": 0.266,
+        "hambre": 0.006,
+        "aburrimiento": 0.946,
+        "suciedad": 0.337,
+        "sueno": 0.734,
+        "urgencia_hambre": 0.006,
+        "urgencia_aburrimiento": 0.946,
+        "urgencia_suciedad": 0.337,
+        "etiqueta": "jugar",
+        "prediccion": "jugar"
+      },
+      {
+        "energia": 0.977,
+        "hambre": 0.294,
+        "aburrimiento": 0.537,
+        "suciedad": 0.358,
+        "sueno": 0.023,
+        "urgencia_hambre": 0.294,
+        "urgencia_aburrimiento": 0.537,
+        "urgencia_suciedad": 0.358,
+        "etiqueta": "jugar",
+        "prediccion": "jugar"
+      },
+      {
+        "energia": 0.125,
+        "hambre": 0.87,
+        "aburrimiento": 0.453,
+        "suciedad": 0.96,
+        "sueno": 0.875,
+        "urgencia_hambre": 0.87,
+        "urgencia_aburrimiento": 0.453,
+        "urgencia_suciedad": 0.96,
+        "etiqueta": "banar",
+        "prediccion": "banar"
+      },
+      {
+        "energia": 0.486,
+        "hambre": 0.631,
+        "aburrimiento": 0.382,
+        "suciedad": 0.22,
+        "sueno": 0.514,
+        "urgencia_hambre": 0.631,
+        "urgencia_aburrimiento": 0.382,
+        "urgencia_suciedad": 0.22,
+        "etiqueta": "comer",
+        "prediccion": "comer"
+      },
+      {
+        "energia": 0.189,
+        "hambre": 0.766,
+        "aburrimiento": 0.054,
+        "suciedad": 0.785,
+        "sueno": 0.811,
+        "urgencia_hambre": 0.766,
+        "urgencia_aburrimiento": 0.054,
+        "urgencia_suciedad": 0.785,
+        "etiqueta": "dormir",
+        "prediccion": "dormir"
+      },
+      {
+        "energia": 0.612,
+        "hambre": 0.666,
+        "aburrimiento": 0.678,
+        "suciedad": 0.57,
+        "sueno": 0.388,
+        "urgencia_hambre": 0.666,
+        "urgencia_aburrimiento": 0.678,
+        "urgencia_suciedad": 0.57,
+        "etiqueta": "jugar",
+        "prediccion": "jugar"
+      }
+    ],
+    "que_hace_falta": [
+      "Una cuarta entrada: suciedad (0 = limpio, 1 = muy sucio).",
+      "Una cuarta salida en la capa final y una neurona más de capacidad.",
+      "Etiquetas para cada combinación de las cuatro necesidades; no basta con inventar la acción.",
+      "Ejemplos donde la higiene compita cerca con sueño, hambre y aburrimiento.",
+      "Una animación nueva para bañar y una forma de actualizar la necesidad de higiene.",
+      "Volver a entrenar desde cero: la capa de salida cambia de 3 a 4 neuronas."
+    ]
+  }
+}
